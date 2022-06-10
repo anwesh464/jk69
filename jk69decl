@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                df "cool"
+                echo "cool"
             }
         }
         stage('Test') { 
             steps {
-                df "hot" 
+                echo "hot" 
             }
         }
         stage('Deploy') { 
             steps {
-                df "cool and hot"
+                echo "cool and hot"
             }
         }
     }
